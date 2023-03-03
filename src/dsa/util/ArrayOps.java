@@ -35,4 +35,18 @@ public class ArrayOps {
         }
         return rightRotatedArray;
     }
+
+    public static String positionOfSearchingElement(Integer[] a, int n)
+    {
+        int pos = 0;
+        for(int i=0;i<a.length;i++){
+            if(a[i]==n){
+                pos = i+1;
+            }
+        }
+        if(pos==0){
+            return "Element " + n + " not found";
+        }
+        return "Element " + n + " found at pos: " + pos;
+    }
 }

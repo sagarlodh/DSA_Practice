@@ -18,5 +18,8 @@ public class ArrayOperations {
         Integer[] rightRotatedArray = ArrayOps.rightRotateArray(arr);
         System.out.print("Right Rotating Array: ");
         System.out.println(Arrays.toString(rightRotatedArray));
+
+        // linear search in array
+        System.out.println(ArrayOps.positionOfSearchingElement(arr,30));
     }
 }
